@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: "cursive", cursive;
+}
+#rightcolumn{
+    margin-left: 220px;
+}
+
+
+#mainphoto{
+     margin-left: 220px;
+}
+#aboutme{
+     margin-left: 220px;
+}
+#main{
+    float: left;
+    width: 200px;
+    position: fixed;
+    background: #D2B48C;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.punkt{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+#rect{
+    height: 185px;
+    width: 500px;
+    background-color: #696969;
+    font-size: 28px;
+    color: #fff;
+}
+#education{
+     margin-left: 220px;
+}
+#skills{
+    margin-left: 220px;
+}
+#hobby{
+    margin-left: 220px;
+}
+#contacts{
+    margin-left: 220px;
+}
+#contactme{
+    margin-left: 220px;
+}
+#end{
+    margin-left: 220px;
+}
+#container{
+    max-width: 1225px; 
+    margin: 0 auto;
+}
