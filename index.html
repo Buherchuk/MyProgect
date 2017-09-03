@@ -6,166 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>біографія</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div id="container">
-    <header>
-        <div id="main">
-            <nav id="main-menu">
-                <ul id="nav">
-                    <li class="punkt"><a href="#main">головна</a></li>
-                    <li class="punkt"><a href="#about-me">про мене</a></li>
-                    <li class="punkt"><a href="#education">освіта</a></li>
-                    <li class="punkt"><a href="#hobby">хоббі</a></li>
-                    <li class="punkt"><a href="#contacts">контакти</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="mainphoto">
-            <img src="img/хлопець-на-скелі.jpg" alt="Автор">
-            <h1>Автобіографічна сторінка</h1>
-            <h2>живи яскраво</h2>
-        </div>
-        <p>
-        </p>
-    </header>
-    <br>
-    <div id="aboutme">
-        <section id="about-me" class="information">
-            <h2>Про мене</h2>
-             <!----------------->
-    <div class="all">
-		<input checked type="radio" name="respond" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-				<div id="slides">
-					<div id="overflow">
-						<div class="image">
-							<article><img src="img/slider/альпінізм.jpg"></article>
-							<article><img src="img/slider/нільзя.jpg"></article>
-							<article><img src="img/slider/благодійність.jpg"></article>
-							<article><img src="img/slider/виступ.jpg"></article>
-							<article><img src="img/slider/хоббі.jpg"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-			</article>
-	</div>
-    <!------------------------>
-    
-            <!--<img src="img/університет.jpg" alt="університет">-->
-            <p> Задумуй і здійснюй задумане!</p>
-            <img src="img/Цитата з автором.jpg"></img>
-             Звичайне слово “так” може закликати до неймовірних пригод.<br>
-             Варто частіше його використовувати і мандрівки не будуть такими далекими
-            <img src="img/Прямокутник.jpg"></img>
-    </div>
-    </section>
-   
-    
-    <section id="education" class="information">
-        <h2>освіта</h2>
-        <img src="img/університет.jpeg" alt="">
-
-    </section>
-    <section id="skills" class="information">
-        <h2>Досвід</h2>
-        <img src="image/skill-image.jpg" alt="">
-        <p>Ще інформація
-        </p>
-    </section>
-    <section id="hobby">
-        <h2>хоббі</h2>
-        <div id="хоббі">
-            <img src="image/photo-img.png" alt="" height="200" width="300">
-            <img src="image/photo-img.png" alt="" height="200" width="300">
-            <img src="image/photo-img.png" alt="" height="200" width="300">
-        </div>
-    </section id="contacts">
-       <div id="end"> <section class="contacts">
-            <h2>Контакти</h2>
-            <p> Я у соцмережах: </p>
-            <div id="contactme">
-                <form method="POST" action="https://formspree.io/bugerchuk@kpnu.km.ua">
-                <div class = "form">
-                <label>Ваше ім'я
-                    <input id="user-name" type="text" name="user-name" required placeholder="Ваше ім'я">
-                </label>
-                <label>Ваша електронна адреса
-                    <input id="user-email" type="email" name="user-email" required placeholder="приклад@email.адреса">
-                </label>
-                <label>тут буде повідомлення
-                    <input type="text" id="message" placeholder="Ваше повідомлення">
-                </label>
-                </div>
-                <span class="btn">   
-                    <input type="reset" value='надіслати'>
-                    <input type="submit" value='скинути'>    
-                </span>
-                <h3 id="thanks" class="sucses" hidden>Повідомлення відправлено!</h3>
-                <h3 id="incorrect" class="failed" hidden>Упс! Помилка.</h3>
-            </form>
+    <div id="container">
+        <header>
+            <div id="main">
+                <nav id="main-menu">
+                    <ul id="nav">
+                        <li class="punkt"><a href="#mainphoto">головна</a></li>
+                        <li class="punkt"><a href="#about-me">про мене</a></li>
+                        <li class="punkt"><a href="#education">освіта</a></li>
+                        <li class="punkt"><a href="#hobby">хоббі</a></li>
+                        <li class="punkt"><a href="#contacts">контакти</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div id="my-contact">
+            <div id="mainphoto">
+                <img src="img/хлопець-на-скелі.jpg" alt="хлопець на скелі" height="340" width="1000">
+                <h1>Автобіографічна сторінка</h1>
+                <h2>живи яскраво</h2>
+                <div id=maintext>
+                    <p align="justify"> Усі знають який у нас, людей, найголовніший ресурс, але далеко не всі його цінутюь. В час технологій ми заходимо в інтернет на "годину", але вони розтягуються значно довше ніж хотілось. Тому варто колекціонувати не кількість пройдених
+                        ігор або переглянутого контенту в інтернеті, а цікаві емоції. Неймовірно приємно ділитсь справжніми враженнями, досягненнями і відкриттями вживо з друзями, ніж в інтернеті. Провірено!<br>
+                        <p>
+                            <div>
+                            </div>
+        </header>
+        <br>
+        <div id="aboutme">
+            <section id="about-me" class="information">
+                <h2>Про мене</h2>
+                <!----------------->
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                    <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2">
+                        <input type="radio" name="slider" id="switch3">
+                        <input type="radio" name="slider" id="switch4">
+                        <input type="radio" name="slider" id="switch5">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <article><img src="img/slider/альпінізм.jpg"></article>
+                                    <article><img src="img/slider/нільзя.jpg"></article>
+                                    <article><img src="img/slider/благодійність.jpg"></article>
+                                    <article><img src="img/slider/виступ.jpg"></article>
+                                    <article><img src="img/slider/хоббі.jpg"></article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                    </article>
+                </div>
+                <!------------------------>
+                <div id=easyword>
+                    <img src="img/цитата.jpg"></img>
+                </div>
+                <p align="justify">
+                    Зазвичай про себе говорю лиш важливу інформацію. Але так, як зараз у мене проект, який дозволяє пофанитись, (а я це люблю) тому є де розгулятись :) Взагалі я та людина про яких говорять: "його повсюди вистачає". Все почалось після вступу в університет.
+                    Крім навчання я брав участь у цікавих університетських проектах. Серед них було фотографування і організація університетських вистав. Інколи і сам брав участь. Після вступу в ПДАТУ (про освіту буде далі) організував музичний гурт,
+                    вдало брали участь в благодійних концертах і веселились досхочу. Останні 6 навчальних років запам'ятались мені найбільше. Літературники, спортивні змагання, рок-концерти, музичні фестивалі і інші неймовірні речі засіли далеко і на
+                    довго в свідомості.
+                </p>
+        </div>
+        </section>
+        <section id="education" class="information">
+            <h2>освіта</h2>
+            <div id=edu>
+                <figure class="sign"><img src="img/університет.jpeg" alt="кпну" height="240" width="450">
+                    <figcaption>КПНУ ім. І. Огієнко</figcaption>
+                </figure>
+                <figure class="sign"><img src="img/пдату.jpg" alt="пдату " height="240" width="450">
+                    <figcaption>ПДАТУ</figcaption>
+                </figure>
+                <div>
+                    <div id=easyword <p align="justify">
+                        У 2011 році я пішов навчатись до Кам'янець-Подільського Національного університету імені Івана Огієнка (КПНУ) на фізико-математичний факультет, де вивчав інформатику. Крім інформатики також було і багато математики. Спочатку вона мені не подобалась, але
+                        вибору не було, та і з часом я полюбив математику (а вона мене) і ми дружньо, тримаючись за ручки, разом закінчили 4 роки. Після того я навчався на магістратурі і отримав диплом викладача інформатики. Однієї освіти мені здалось
+                        мало і я подав документи до Подільського Державного аграрно-технічного університету на економічний факультет. Загалом, цифри оточували мене повсюди. Але інколи важко порахувати здачу і роблю розумний вигляд (а розумний вигляд я
+                        добряче навчився робити).
+
+                        </p>
+                    </div>
+        </section>
+        <section id="hobby" class="information">
+            <h2>Хоббі</h2>
+            <div id='hobbyes'>
+                <div id=easyword <p align="justify">
+                    Серед моїх захоплень неймовірно багато всього. Це і фотографування, музика, катання верхи, шахи, і багато чого іншого. Також люблю займатись організацією різних заходів. Востаннє допомагав організовувати літературники, де молодь читала свої твори для
+                    однодумців. Атмосфері позаздрять багато сучасних виконавців!
+                    </p>
+                </div>
 
             </div>
         </section>
-        <footer>
+        <section id="skills">
+            <h2>Досвід</h2>
+            <div id="skils">
+                <img src="img/slider/малюнок.jpg" alt="малюнок" height="200" width="305">
+                <img src="img/slider/фотографування.jpg" alt="бджілка" height="200" width="305">
+                <img src="img/slider/фортеця.jpg" alt="гумор" height="200" width="305">
+            </div>
+            <div id=easyword <p align="justify">
+                Досвід роботи починається з фотосалона і закінчуєься інженером в інтернет-компанії. Також підробляв ремонтом та обслуговуванням комп'ютеріів. Інколи дозволяю собі пофотографувати для задоволення і отримане завантажувати на фотобанки. Займаюсь подібним
+                видом діяльності уже 6 місяців. Планую в подальшому повністю перейти на такий вид діяльності, що дозволить подорожувати без угризіння совісті за потрачений час.
+                </p>
+            </div>
+        </section id="contacts">
+        <div id="end">
+            <section class="contacts">
+                <h2>Контакти</h2>
+                <div>
+
+                    <div id="contactme">
+
+                        <form method="POST" action="https://formspree.io/bugerchuk@kpnu.km.ua">
+                            <div class="form">
+                                <label>Ваше ім'я
+                    <input id="user-name" type="text" name="user-name" required placeholder="Ваше ім'я">
+                </label>
+                                <label>Ваша електронна адреса
+                    <input id="user-email" type="email" name="user-email" required placeholder="приклад@email.адреса">
+                </label>
+                                <label>тут буде повідомлення
+                    <input type="text" id="message" placeholder="Ваше повідомлення">
+                </label>
+                            </div>
+                            <span class="btn">   
+                    <input type="reset" value='надіслати'>
+                    <input type="submit" value='скинути'>    
+                </span>
+                            <h3 id="thanks" class="sucses" hidden>Повідомлення відправлено!</h3>
+                            <h3 id="incorrect" class="failed" hidden>Упс! Помилка.</h3>
+                        </form>
+                    </div>
+                    <div id="my-contact">
+                    </div>
+                </div>
+            </section>
             <footer>
-        <h2>Contact us</h2>
-        <div id="contacts">   
-            <a href="https://www.facebook.com/profile.php?id=100019246666920&pnref=friends.search"> 
-                <img class="icon" src="images/facebook.png" alt="facebook icon">
-                <!--Our page in facebook-->
-            </a>
-            <p>
-                <img class="icon" src="images/telephone.png" alt="telephone">
-                Phone: +380677239894
-            </p>
-            <p>
-                <img class="icon" src="images/location.png" alt="location">
-                Lviv, Kytayska 2, 95 str.
-            </p>
+                <footer>
+
+                    <h2>У соцмережах</h2>
+                    <div id=easyword <p align="justify"> зв'яжись зі мною через соцмережі або надішли листа 
+                    <div id="contacts">
+                        <a href="https://www.facebook.com/bogdan.bugerchuk"> 
+                    </a>
+                        <p>
+                            alt="telephone"> Phone: +380677239894
+                        </p>
+                        <p>
+                            Kamyanets-Podilsky, Uralska 3.
+                        </p>
+                        
+                    </div>
+                    </p>
+            </div>
+                </footer>
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                <script src="js/js.js"></script>
+            </footer>
         </div>
-          <nav class = "footer-nav">  
-             <ul>
-                 <li>About us</li>
-                 <li>Our services</li>
-                 <li>Prices</li>
-                 <li>Contacts</li>
-             </ul>
-        </nav>    
-    </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="js/js.js"></script>
-    </footer>
-    </div>
-</div>
-</div>
+        </div>
+        </div>
 </body>
 
 </html>
